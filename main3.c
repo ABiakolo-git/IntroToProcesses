@@ -14,7 +14,7 @@ void  main(void)
 
      for (i=0; i < 2; i++){
           pid = fork();
-          if(pid == -1)
+          if(pid < 0)
           {
             printf("Error");
           }
